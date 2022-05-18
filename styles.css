@@ -15,6 +15,8 @@ body {
     font-weight: bold;
 }
 
+
+/* left side of the page arrangement*/
 .page-container {
     display: flex;
     justify-content: center;
@@ -30,7 +32,7 @@ body {
 }
 
 .left-section img {
-    width: 490px;
+    width: 520px;
     height: 100%;
 }
 
@@ -48,7 +50,7 @@ body {
 .image-logo img {
     width: 70px;
     height: 70px;
-    margin-left: 110px;
+    margin-left: 140px;
     margin-right: 10px;
 }
 
@@ -59,4 +61,89 @@ body {
     font-style: italic;
 }
 
+/* right side of the page arrangement*/
+.right-section {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 30px;
+}
+
+.form-info {
+    position: relative;
+    margin-bottom: 20px;
+    padding-right: 100px;
+}
+
+.form-info > p {
+    font-size:1.5rem;
+}
+
+/* inputs arrangement */
+.form-inputs {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 15px;
+    width: 100%;
+
+    padding: 25px 0px;
+    border-top: thin solid black;
+    border-bottom: thin solid black;
+}
+
+.form-inputs input{
+    outline: none;
+    border: solid 1px lightgray;
+    border-radius: 5px;
+    font-family: 'Roboto Flex', sans-serif;
+    line-height: 1.3rem;
+    width: 250px;
+}
+
+.form-inputs input:focus{
+    border-width: 2px;
+    border-color: lightskyblue;
+    box-shadow: 1.5px 1.5px 1.5px 1.5px rgb(179, 179, 179);
+}
+
+.form-inputs input:focus:invalid{
+    border-width: 2px;
+    border-color: red;
+}
+
+#user-name, #user-contact, #user-password{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 30px;
+}
+
+.form-inputs .input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-buttons button{
+    background-color: #596D48;
+    color: white;
+    width: 140px;
+    height: 40px;
+    margin-bottom: 15px;
+    border-radius: 7px;
+    border-color: #596D48;
+    box-shadow: 2px 2px 2px 2px rgb(179, 179, 179);
+    cursor: pointer;
+
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 800;
+    font-size: 0.9rem;
+}
+
+.form-buttons a{
+    text-decoration: none;
+    color: #596D48;
+    margin-left: 5px;
+}
 
